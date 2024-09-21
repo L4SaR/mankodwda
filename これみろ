@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<style id="style1" type="text/css">
+            .hidden           {display:none;}
+            body, html {
+                /* height: 100%; */
+                font-family:helvetica;
+                background-color:#111;
+                margin:0px;
+                overflow-x:visible;
+                color:#fff;
+
+                text-align: center;
+            }
+
+            html {
+                display: table;
+                margin: auto;
+            }
+
+            body {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            button {
+                /* reset styling*/
+                background: none;
+	            color: inherit;
+	            border: none;
+	            padding: 0;
+	            font: inherit;
+	            cursor: pointer;
+	            outline: inherit;
+
+                /* custom styling */
+                color:#fff;
+                display:block;
+                width:100%;
+                padding-top:10px;
+                padding-bottom:10px;
+                border-radius:10px;
+                background-color:#ff3056;
+                margin:10px;
+
+            }
+
+            .visible          {display:block;}
+        </style>
+</head>
+
+
+
+<body>
+
+
+
+
+<script async="async" data-cfasync="false" src="//thubanoa.com/1?z=6785329"></script>
+<div class="visible">
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; download('direct')" data-cf-modified-7bf3fecc6ec614a1279ee711->Direct Install</button>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; download('direct_alt')" data-cf-modified-7bf3fecc6ec614a1279ee711->Direct Install (Support Scarlet)</button>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; download('computer')" data-cf-modified-7bf3fecc6ec614a1279ee711->Computer (No-Revokes)</button>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; download('alpha')" data-cf-modified-7bf3fecc6ec614a1279ee711->IPA (Custom Cert + Developer Login)</button>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; download('trollstore')" data-cf-modified-7bf3fecc6ec614a1279ee711->IPA (Trollstore)</button>
+</div>
+<div class="hidden">
+<h1>Please wait as Scarlet installs.</h1>
+<h1 id="timer"></h1>
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7bf3fecc6ec614a1279ee711-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8c68ba64783d8a48","version":"2024.8.0","r":1,"token":"bf623057bd9641aaa3065fe5187cc993","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
+<script type="7bf3fecc6ec614a1279ee711-text/javascript">
+    function download(option){
+        console.log(option);
+        document.getElementsByClassName('visible')[0].remove();
+        with( document.styleSheets.style1.cssRules[0] )
+        style.display = style.display ? "" : "block";
+
+        var time = 10;
+        var x = setInterval(function() {
+            console.log(time);
+            document.getElementById("timer").innerHTML = time;
+            if (time <= 0) { 
+                clearInterval(x);
+                if (option == "direct")
+                {
+                    // window.open("itms-services://?action=download-manifest&url=https://resources.usescarlet.com/Plist/ScarletAlpha.plist","_self")
+                    window.open("https://balance.usescarlet.com/secure", "_self")
+//		   window.open("https://resources.usescarlet.com/api/install/secure","_self")
+                }
+                else if (option == "direct_alt")
+                {
+                      window.open("https://onepiecered.co/s?7rv", "_self")
+//                    window.open("https://bstlar.com/B/scarletdirect","_self")
+                }
+                else if (option == "computer")
+                {
+                    window.open("https://github.com/DebianArch64/DebProvision","_self")
+                }
+                else if (option == "alpha")
+                {
+                    window.open("https://resources.usescarlet.com/repo/IPAs/ScarletAlpha.ipa","_self")
+                }
+                else if (option == "trollstore")
+                {
+                    window.open("https://resources.usescarlet.com/repo/IPAs/Entitled.ipa","_self")
+                }
+                else
+                {
+                    window.alert("Unknown option: " + option);
+                }
+            return;
+         }
+         time--;
+    }, 1000);
+}
+</script>
